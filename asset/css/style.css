@@ -10,10 +10,7 @@
     padding-bottom: 25px;
     background-color: black;
 }
-.menu{
-    height: 100px;
-    background-color: blue;
-}
+
 .content{
     display: flex;
     flex-wrap: wrap;
@@ -42,7 +39,60 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: rgba(104, 104, 104, 0.7);
+    background-color: rgba(104, 104, 104, 0.3);
     color: white;
     padding: 5px;
+}
+.menu{
+    height: 100px;
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-items{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.menu-items i{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.left-col{
+    display: flex;
+    align-items: center;
+    width: 10%;
+    justify-content: space-around;
+}
+.arrow-up{
+    color: white;
+    margin-left: 15px;
+    font-size: 0.7em;
+}
+.mid-col{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: space-around;
+}
+#share-screen{
+    color: #4BC800;
+}
+.mid-col .arrow-up{
+    margin-left: -18px;
+}
+.end-meeting{
+    color: red;
+    padding: 0 20px;
+}
+.right-col{
+    background-color: #4A4A4A;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
