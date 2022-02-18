@@ -5,18 +5,23 @@
 }
 .main-content{
     height: calc(100vh - 100px);
-    background-color: red;
     position: relative;
     padding: 50px;
     padding-bottom: 25px;
+    background-color: black;
 }
 .menu{
     height: 100px;
     background-color: blue;
 }
 .content{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
     height: 100%;
-    background-color: green;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
 }
 .options{
     height: 20px;
@@ -25,4 +30,19 @@
     right: 20px;
     top: 3px;
     width: 100px;
+}
+.card{
+    height: 200px;
+    width: 300px;
+    background-image: url(https://picsum.photos/300/200);
+    background-position: contain;
+    position: relative;
+}
+.user{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(104, 104, 104, 0.7);
+    color: white;
+    padding: 5px;
 }
